@@ -1,0 +1,6 @@
+all :
+	ssh shikida@lnx00cv cd ~/gwork/samples/hello;env CC='gcc -m32' make
+ 
+.PHONY : clean
+clean :
+	ssh shikida@lnx00cv cd ~/gwork/samples/hello;make clean
